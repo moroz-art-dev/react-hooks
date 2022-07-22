@@ -1,6 +1,7 @@
 import React, { createContext } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import App from "./App";
 
 export const TreesContext = createContext();
 
@@ -11,13 +12,6 @@ const trees = [
   { id: "4", type: "Component" },
 ];
 
-function App() {
-  return (
-    <div>
-      <h1>Trees I've Heard Of</h1>
-    </div>
-  );
-}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
