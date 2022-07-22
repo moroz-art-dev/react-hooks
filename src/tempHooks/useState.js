@@ -21,6 +21,37 @@ import { FaStar } from "react-icons/fa";
 //   );
 // }
 
+
+// Creating controlled components with useState
+// function App() {
+//   const [sound, setSound] = useState("");
+//   const [color, setColor] = useState("#000000");
+
+//   const submit = (e) => {
+//     e.preventDefault();
+//     alert(`${sound} sounds like ${color}`);
+//     setSound("");
+//     setSound("000000");
+//   };
+
+//   return (
+//     <form onSubmit={submit}>
+//       <input
+//         onChange={(e) => setSound(e.target.value)}
+//         value={sound}
+//         type="text"
+//         placeholder="Sound..."
+//       />
+//       <input
+//         onChange={(e) => setColor(e.target.value)}
+//         value={color}
+//         type="color"
+//       />
+//       <button>ADD</button>
+//     </form>
+//   );
+// }
+
 const createArray = (length) => [...Array(length)];
 
 function Star({ selected = false, onSelect }) {
