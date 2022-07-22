@@ -9,7 +9,7 @@ export function useEfetch(uri) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState();
 
-  useEfetch(() => {
+  useEffect(() => {
     if (!uri) return;
     fetch(uri)
       .then((data) => data.json)
