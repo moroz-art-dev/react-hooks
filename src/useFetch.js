@@ -17,6 +17,7 @@ export function useEfetch(uri) {
       .then(() => setLoading(false))
       .catch(setError);
   }, [uri]);
+  return { loading, data, error };
 }
 
-return { loading, data, error };
+
